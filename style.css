@@ -1,0 +1,149 @@
+/* Thème inspiré de la brochure : bleus, verts, bulles d'eau, layout propre et responsive */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f9fc; /* Fond clair bleu pâle comme dans la brochure */
+}
+
+header {
+    background-color: #007bff; /* Bleu principal */
+    color: white;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00b894; /* Vert des sous-titres */
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero {
+    background-color: #e9f7ff; /* Fond hero clair */
+    padding: 80px 20px;
+}
+
+h1, h2, h3 {
+    color: #007bff;
+}
+
+h3 {
+    color: #00b894; /* Vert pour sous-sections */
+}
+
+.slogan {
+    font-style: italic;
+    color: #007bff;
+    font-size: 1.2em;
+}
+
+.service-item {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section-image, .hero-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Éléments décoratifs : bulles comme dans la brochure */
+section::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #00b894;
+    border-radius: 50%;
+    opacity: 0.3;
+    left: 10%;
+    top: 10%;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive pour mobiles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin: 10px 0;
+    }
+    .hero {
+        padding: 40px 10px;
+    }
+}
